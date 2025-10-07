@@ -1,0 +1,50 @@
+### POST /auth/register
+
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "email": "rec@rec",
+  "password": "rec",
+  "role": "Recruter"
+}
+
+
+### POST /auth/login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "rec@rec",
+  "password": "rec"
+}
+
+
+
+### POST /auth/login
+POST http://localhost:3000/jobs/create
+Content-Type: application/json
+
+{
+  "companyName": "TechCorp",
+  "jobTitle": "SDE 2",
+  "description": "Build amazing React apps",
+  "location": "Remote",
+  "salary": "50k-60k",
+  "experience": "2 years",
+  "recruiterId": 27
+}
+
+
+### POST /auth/login
+GET http://localhost:3000/jobs/recruiter/27
+
+
+### POST /auth/login
+DELETE http://localhost:3000/jobs/recruiter/job/7
+
+
+
+### POST /auth/login
+GET http://localhost:3000/jobs/all
+
